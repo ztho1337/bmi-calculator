@@ -13,6 +13,51 @@ body {
   user-select: none;
 }
 
+.checked {
+  box-shadow: inset 0px 0px 28px 0px rgb(29, 34, 54) !important;
+  background-color: #525b81 !important;
+}
+
+.Preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #131633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
+  padding-bottom: 50px;
+}
+.Preloader-Icon {
+  animation: preloader-animation 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes preloader-animation {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
 input[type=range] {
   height: 34px;
   -webkit-appearance: none;
@@ -342,4 +387,63 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.Error {
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+.Error__Box {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 415px;
+  max-width: 700px;
+  width: calc(100% - 32px);
+  background-color: #404b74;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgb(39, 36, 36);
+}
+.Error__Box-Icon {
+  margin-bottom: 15px;
+}
+.Error__Box-Title {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+.Error__Box-Description {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.Error__Box-Button {
+  margin-top: 30px;
+  height: 55px;
+  width: 135px;
+  background-color: #5c6aa1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.Error__Box-Button:hover {
+  background-color: #4e61ad;
 }/*# sourceMappingURL=index.css.map */
