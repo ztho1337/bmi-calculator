@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  width: 100%;
+  background-color: #131633;
+  font-family: "Clash Display";
+  color: #f5ecec;
+  user-select: none;
+}
+
+input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #6273ad;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  background: #6b8de7;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -9.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #6273ad;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #6273ad;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  background: #6b8de7;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #6273ad;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #6273ad;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  background: #6b8de7;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #6273ad;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #6273ad;
+}
+
+.Navbar {
+  height: 10vh;
+  width: 100%;
+  display: Flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px #28304d solid;
+}
+.Navbar__Item {
+  color: #f5ecec;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+.Navbar__Item:hover {
+  background-color: #383d54;
+}
+.Navbar__Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .Navbar__Content {
+    display: none;
+  }
+}
+.App {
+  padding: 25px;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AppContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.AppContent__Genderchoose {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  gap: 20px;
+}
+.AppContent__GenderchooseText {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  color: #f5ecec;
+}
+.AppContent__GenderchooseText1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  color: #f5ecec;
+}
+.AppContent__GenderchooseBox {
+  height: 150px;
+  width: calc(50% - 8px);
+  background-color: #383d54;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  gap: 5px;
+  transition: 0.3s;
+}
+.AppContent__GenderchooseBox:hover {
+  background-color: #2f344e;
+}
+.AppContent__Height {
+  height: 150px;
+  width: 350px;
+  background-color: #383d54;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.AppContent__Height-Title {
+  color: #9ca0c6;
+  font-size: 24px;
+  font-weight: bold;
+}
+.AppContent__Height-ContentText {
+  color: #73829d;
+  font-size: 24px;
+}
+.AppContent__Height-Range {
+  margin-top: 10px;
+}
+.AppContent__Height-RangeBox {
+  width: 220px;
+}
+.AppContent__WeightAge {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  gap: 20px;
+}
+.AppContent__WeightAge-Box {
+  height: 150px;
+  width: calc(50% - 8px);
+  background-color: #383d54;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+.AppContent__WeightAge-Title {
+  color: #9ca0c6;
+  font-size: 24px;
+  font-weight: bold;
+}
+.AppContent__WeightAge-ContentText {
+  color: #73829d;
+  font-size: 24px;
+}
+.AppContent__WeightAge-Plus {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  align-items: center;
+}
+.AppContent__WeightAge-boxPlusMinus {
+  background-color: #212c48;
+  border-radius: 99px;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 500;
+  color: #f5ecec;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.AppContent__WeightAge-boxPlusMinus:hover {
+  background-color: #1e233b;
+}
+.AppContent__Button-btn {
+  height: 55px;
+  width: 175px;
+  background-color: #383d54;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.AppContent__Button-btn:hover {
+  background-color: #2f344e;
+}
+.AppContent__Stats {
+  height: 77px;
+  min-width: 175px;
+  background-color: #383d54;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+.AppContent__Stats-Text {
+  font-size: 18px;
+}
+.AppContent__Stats-Final {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+  letter-spacing: 0.075em;
+}
+.AppContent__Stats-Final1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+  letter-spacing: 0.075em;
+}
+
+#heightText {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f5ecec;
+}
+
+#weightText {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f5ecec;
+}
+
+#ageText {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f5ecec;
+}
+
+.Footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

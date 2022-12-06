@@ -1,0 +1,196 @@
+.App {
+  padding: 25px;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    &__Genderchoose {
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      gap: 20px;
+      &Text {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+        color: $main-color;
+      }
+      &Text1 {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+        color: $main-color;
+      }
+    }
+    &__GenderchooseBox {
+      height: 150px;
+      width: calc(50% - 8px);
+      background-color: #383d54;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      cursor: pointer;
+      gap: 5px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #2f344e;
+      }
+    }
+
+    &__Height {
+      height: 150px;
+      width: 350px;
+      background-color: #383d54;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &-Title {
+        color: #9ca0c6;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      &-ContentText {
+        color: #73829d;
+        font-size: 24px;
+      }
+      &-Range {
+        margin-top: 10px;
+        &Box {
+          width: 220px;
+        }
+      }
+    }
+
+    &__WeightAge {
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      gap: 20px;
+      &-Box {
+        height: 150px;
+        width: calc(50% - 8px);
+        background-color: #383d54;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+      }
+      &-Title {
+        color: #9ca0c6;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      &-ContentText {
+        color: #73829d;
+        font-size: 24px;
+      }
+      &-Plus {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 30px;
+        align-items: center;
+      }
+      &-boxPlusMinus {
+        background-color: #212c48;
+        border-radius: 99px;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 500;
+        color: $main-color;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: #1e233b;
+        }
+      }
+    }
+
+    &__Button {
+      &-btn {
+        height: 55px;
+        width: 175px;
+        background-color: #383d54;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: #2f344e;
+        }
+      }
+    }
+
+    &__Stats {
+      height: 77px;
+      min-width: 175px;
+      background-color: #383d54;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 10px;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.2s;
+      &-Text {
+        font-size: 18px;
+      }
+      &-Final {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 5px;
+        letter-spacing: 0.075em;
+      }
+      &-Final1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 5px;
+        letter-spacing: 0.075em;
+      }
+    }
+  }
+}
+
+#heightText {
+  font-size: 40px;
+  font-weight: bold;
+  color: $main-color;
+}
+
+#weightText {
+  font-size: 40px;
+  font-weight: bold;
+  color: $main-color;
+}
+
+#ageText {
+  font-size: 40px;
+  font-weight: bold;
+  color: $main-color;
+}

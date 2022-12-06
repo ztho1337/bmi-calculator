@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Navbar">
+      <div class="Navbar__logo">
+        <a href="./"
+          ><img src="./assets/logo.svg" alt="Logo BMI Calculator"
+        /></a>
+      </div>
+      <div class="Navbar__Content">
+        <a href="./" class="Navbar__Item">Home</a>
+        <a
+          href="https://github.com/ztho1337/bmi-calculator"
+          class="Navbar__Item"
+          target="_blank"
+          >Github</a
+        >
+        <a
+          href="https://github.com/ztho1337"
+          class="Navbar__Item"
+          target="_blank"
+          >Author</a
+        >
+      </div>
+    </div>
+
+    <div class="App">
+      <div class="AppContent">
+        <div class="AppContent__Genderchoose">
+          <!-- FIXME: -->
+          <div class="AppContent__GenderchooseBox">
+            <img src="./assets/male-icon.svg" alt="Male Icon" />
+            <span class="AppContent__GenderchooseText">MALE</span>
+          </div>
+          <div class="AppContent__GenderchooseBox">
+            <img src="./assets/female-icon.svg" alt="Female Icon" />
+            <span class="AppContent__GenderchooseText1">FEMALE</span>
+          </div>
+        </div>
+
+        <div class="AppContent__Height">
+          <div class="AppContent__Height-Title">HEIGHT</div>
+          <div class="AppContent__Height-Content">
+            <span class="AppContent__Height-ContentText"
+              ><span id="heightText">170</span
+              ><span style="margin-left: 5px">cm</span></span
+            >
+          </div>
+          <div class="AppContent__Height-Range">
+            <input
+              type="range"
+              class="AppContent__Height-RangeBox"
+              name="height"
+              id="height"
+              min="120"
+              max="220"
+            />
+          </div>
+        </div>
+
+        <div class="AppContent__WeightAge">
+          <div class="AppContent__WeightAge-Box">
+            <div class="AppContent__WeightAge-Title">WEIGHT</div>
+            <div class="AppContent__WeightAge-Content">
+              <span class="AppContent__WeightAge-ContentText"
+                ><span id="weightText">70</span
+                ><span style="margin-left: 5px">kg</span></span
+              >
+            </div>
+            <div class="AppContent__WeightAge-Plus">
+              <div class="AppContent__WeightAge-boxPlusMinus" id="weightMinus">
+                -
+              </div>
+              <div class="AppContent__WeightAge-boxPlusMinus" id="weightPlus">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="AppContent__WeightAge-Box">
+            <div class="AppContent__WeightAge-Title">AGE</div>
+            <div class="AppContent__WeightAge-Content">
+              <span class="AppContent__WeightAge-ContentText"
+                ><span id="ageText">18</span
+                ><span style="margin-left: 5px">yr</span></span
+              >
+            </div>
+            <div class="AppContent__WeightAge-Plus">
+              <div class="AppContent__WeightAge-boxPlusMinus" id="ageMinus">
+                -
+              </div>
+              <div class="AppContent__WeightAge-boxPlusMinus" id="agePlus">
+                +
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="AppContent__Button">
+          <div class="AppContent__Button-btn" id="submitButton">
+            Calculate BMI
+          </div>
+        </div>
+
+        <div class="AppContent__Stats" id="stats">
+          <span class="AppContent__Stats-Text"
+            >Your BMI:
+            <span class="AppContent__Stats-Final" id="statsFinal"
+              >UNDEFINED</span
+            ></span
+          >
+          <span class="AppContent__Stats-Text"
+            >Your Weight:
+            <span class="AppContent__Stats-Final1" id="statsWeight"
+              >UNDEFINED</span
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="Footer">
+      <span>Powered by ztho.me</span>
+      <span>ztho.me © 2022-2023</span>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/input.js"></script>
+  </body>
+</html>
