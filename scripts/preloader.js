@@ -6,3 +6,5 @@ window.addEventListener("load", () => {
     preloader.style.opacity = "0";
   }, 1000);
 });
+
+//
