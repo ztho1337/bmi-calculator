@@ -12,5 +12,4 @@
 <br>
 
 <h2>🎈 Preview</h2>
-<li><a href="https://bmi.ztho.me/">Preview [ ZTHO.ME ]</a> - temporarily unavailable</li>
-<li><a href="https://inspiring-trifle-1c71a4.netlify.app/">Temporarily Preview [ NETLIFY.APP ]</a></li>
+<li><a href="https://bmi.ztho.me/">Preview [ ZTHO.ME ]</a></li>
